@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: "Playwrite HU", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(270deg, #ff7eb3, #ff758c, #88b4ef);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+.container {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#animatedText {
+    font-size: 2em;
+    font-weight: 400; /* Ajuste o peso conforme necessário */
+    color: white;
+    animation: rotateText 6s linear infinite;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-family: "Playwrite HU", sans-serif;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes rotateText {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
